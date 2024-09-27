@@ -36,7 +36,12 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/MediaFusion-e2e/**/*"]
+      "exclude": [
+        "apps/MediaFusion-e2e/**/*",
+        "apps/images-e2e/**/*",
+        "apps/videos-e2e/**/*",
+        "apps/audio-e2e/**/*"
+      ]
     }
   ]
 }

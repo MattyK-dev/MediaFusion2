@@ -5,9 +5,14 @@
   "scripts": {
     "build:all": "nx run-many --target=build --all --parallel --maxParallel=3",
     "start:mediafusion": "nx serve MediaFusion",
-    "build:mediafusion": "nx build MediaFusion",
+    "start:images": "nx serve images",
+    "start:audio": "nx serve audio",
+    "start:videos": "nx serve videos",
+    "build:mediafusion": "nx build MediaFusion --skip-nx-cache",
+    "build:images": "nx build images --skip-nx-cache",
+    "build:videos": "nx build videos --skip-nx-cache",
+    "build:audio": "nx build audio --skip-nx-cache",
     "docker:compose:up": "docker compose up -d"
-
   },
   "private": true,
   "dependencies": {

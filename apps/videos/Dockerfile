@@ -14,10 +14,10 @@ RUN npm install
 COPY . .
 
 # Build the Nx application (adjust <app-name> to your actual app name)
-RUN npm run build:mediafusion
+RUN npm run build:videos
 
 # Expose the port the application will run on
 EXPOSE 3000
 
 # Run the application (adjust <app-name> to your actual app name)
-CMD ["npm", "run", "start:mediafusion"]
+CMD ["npm", "run", "start:videos"]

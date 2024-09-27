@@ -1,0 +1,26 @@
+{
+  "name": "audio",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/audio/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "dependsOn": ["build"],
+      "options": {
+        "buildTarget": "audio:build",
+        "runBuildTargetDependencies": false
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "audio:build:development"
+        },
+        "production": {
+          "buildTarget": "audio:build:production"
+        }
+      }
+    }
+  }
+}
